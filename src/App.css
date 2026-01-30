@@ -1,0 +1,149 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary: #8b5cf6;
+  --color-secondary: #ec4899;
+  --color-dark: #0f172a;
+  --color-darker: #020617;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/10 dark:bg-black/30 border border-white/20;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Responsive grid */
+.grid-responsive {
+  @apply grid gap-6 md:gap-8;
+}
+
+.grid-responsive-2 {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.grid-responsive-3 {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-primary text-white rounded-lg font-medium hover:opacity-90 transition disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-secondary text-white rounded-lg font-medium hover:opacity-90 transition disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition;
+}
+
+/* Card styles */
+.card {
+  @apply p-6 rounded-lg border border-gray-800 bg-darker hover:border-primary/50 transition;
+}
+
+.card-light {
+  @apply p-6 rounded-lg border border-gray-200 bg-gray-50 hover:border-primary/50 transition;
+}
+
+/* Input styles */
+.input-base {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-800 bg-black/50 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition;
+}
+
+.input-base-light {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-200 bg-white text-dark placeholder-gray-400 focus:outline-none focus:border-primary transition;
+}
+
+/* Monospace text for seeds/addresses */
+.font-mono-seeds {
+  @apply font-mono text-sm tracking-wider break-all;
+}
+
+/* Alert/Warning styles */
+.alert-warning {
+  @apply p-4 rounded-lg bg-amber-900/30 border border-amber-700/50 text-amber-100;
+}
+
+.alert-danger {
+  @apply p-4 rounded-lg bg-red-900/30 border border-red-700/50 text-red-100;
+}
+
+.alert-success {
+  @apply p-4 rounded-lg bg-green-900/30 border border-green-700/50 text-green-100;
+}
+
+/* Animation: fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Copy button feedback */
+.copy-button-feedback {
+  @apply relative;
+}
+
+.copy-feedback {
+  @apply absolute top-0 right-0 text-xs text-green-400 pointer-events-none;
+  animation: fadeOut 2s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Loading spinner */
+.spinner {
+  @apply inline-block animate-spin rounded-full border-2 border-primary border-t-transparent;
+}
+
+/* QR code container */
+.qr-container {
+  @apply flex items-center justify-center p-4 bg-white rounded-lg;
+}
+
+/* Responsive typography */
+@screen md {
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+}

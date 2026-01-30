@@ -1,0 +1,224 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         CLOAKSEED APP FLOW                                 ║
+║         Turn Your Seed Phrase Into A Secret Code Only You Know             ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LANDING PAGE (Public Entry Point)                                            │
+│                                                                               │
+│ 🎯 Hero: "Turn your seed phrase into a love poem..."                        │
+│ 📖 How It Works: 6-step visual guide                                        │
+│ ⭐ Features: Security, Privacy, Multi-Chain                                 │
+│ 💰 Pricing: Free vs Pro ($9.99)                                             │
+│ ❓ FAQ: Common questions answered                                           │
+│ [Enter Dashboard] ──→ (if first time, navigate to Generator)                │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ DASHBOARD (Main Hub)                                                         │
+│                                                                               │
+│ 🔐 Your Cloaks                                                              │
+│ ┌───────────────────────────────────────────────────────────────────────┐   │
+│ │ ┌─ Cloak 1: "My Bitcoin" (animals, Created Dec 12) ────────────┐     │   │
+│ │ │ Theme: animals                                                 │     │   │
+│ │ │ [Rename] [Delete]                                            │     │   │
+│ │ └─────────────────────────────────────────────────────────────┘     │   │
+│ │ ┌─ Cloak 2: "Ethereum Wallet" (colors, Created Dec 10) ─────────┐   │   │
+│ │ │ Theme: colors                                                 │     │   │
+│ │ │ [Rename] [Delete]                                            │     │   │
+│ │ └─────────────────────────────────────────────────────────────┘     │   │
+│ └───────────────────────────────────────────────────────────────────────┘   │
+│                                                                               │
+│ [+ New Cloak] [👁 Restore Cloak] [⚙️ Settings]                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+                        │                    │                  │
+         ┌──────────────┴─────────────┐      │                  │
+         ▼                            ▼      ▼                  ▼
+    ┌─────────────┐            ┌──────────────┐         ┌──────────────┐
+    │  GENERATOR  │            │   DECODER    │         │   SETTINGS   │
+    └─────────────┘            └──────────────┘         └──────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ GENERATOR (Create New Cloak)                                                │
+│                                                                               │
+│ Step 1: CHOOSE THEME                                                         │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ Theme Options:                                                           │ │
+│ │ [Animals] [Colors] [Food] [Fantasy] [Nonsense] [Custom] ◀─ Upload 2048│ │
+│ │                                                                          │ │
+│ │ Cloak Name: [_____________________________]                             │ │
+│ │                                                                          │ │
+│ │ [Generate Seed & Cloak →]                                             │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                    │                                         │
+│                                    ▼                                         │
+│ Step 2: GENERATE & DISPLAY                                                   │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ 🔐 Real Seed (For MetaMask/Phantom)                              [👁]   │ │
+│ │ ┌─────────────────────────────────────────────────────────────┐         │ │
+│ │ │ abandon able zone kind dragon fell duty lung dance denial… │ (blur) │ │
+│ │ └─────────────────────────────────────────────────────────────┘         │ │
+│ │ [Copy] [QR Code]                                                        │ │
+│ │                                                                          │ │
+│ │ 🎭 Cloak Phrase (Write In Notebook)                            [👁]    │ │
+│ │ ┌─────────────────────────────────────────────────────────────┐         │ │
+│ │ │ fluff spark moon kind dragon fell duty lung dance nonsense…│ (show) │ │
+│ │ └─────────────────────────────────────────────────────────────┘         │ │
+│ │ [Copy] [QR Code]                                                        │ │
+│ │                                                                          │ │
+│ │ Multi-Chain Addresses:                                                  │ │
+│ │ Ethereum: 0x742d35Cc6634C0532925a3b844Bc9e7595f...      [Copy]        │ │
+│ │ Bitcoin:  bc1qw508d6qejxtdg4y5r3zarvary0c5x...          [Copy]        │ │
+│ │ Solana:   Solxxxxxx...                                    [Copy]        │ │
+│ │                                                                          │ │
+│ │ [✓ Save Cloak to Vault] [🔄 Generate New] [Download JSON]             │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ DECODER (Restore Your Wallet)                                               │
+│                                                                               │
+│ Select Cipher:                                                               │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ [✓ My Bitcoin (animals)] [Ethereum Wallet (colors)] [...]           │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                               │
+│ Paste Cloak Phrase:                                                          │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ [fluff spark moon kind dragon fell duty lung dance nonsense...]      │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                               │
+│ [Decode to Real Seed →] [🎭 Generate Panic Phrase]                         │
+│                                   │
+│                                   ▼
+│ ✓ Seed Decoded!                                                              │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ Real Seed (Import to MetaMask)                                  [👁]     │ │
+│ │ ┌─────────────────────────────────────────────────────────────┐         │ │
+│ │ │ abandon able zone kind dragon fell duty lung dance denial…│ (show) │ │
+│ │ └─────────────────────────────────────────────────────────────┘         │ │
+│ │ [Copy Seed] [QR Code]                                                   │ │
+│ │                                                                          │ │
+│ │ Wallet Addresses:                                                       │ │
+│ │ Ethereum: 0x742d35... [Copy]                                           │ │
+│ │ Bitcoin:  bc1qw... [Copy]                                               │ │
+│ │ Solana:   Sol... [Copy]                                                 │ │
+│ │                                                                          │ │
+│ │ Next Steps: 1. Open MetaMask 2. Import seed 3. Confirm password        │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                        Panic Phrase Branch:
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PANIC PHRASE (Coercion Defense)                                             │
+│                                                                               │
+│ 🎭 Decoy Cloak Phrase:                                                      │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ [fake word bank coast moon great dragon fell duty lung nonsense...]   │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ [Copy]                                                                       │
+│                                                                               │
+│ ⚠️ This maps to EMPTY wallets. If threatened, give attacker this cloak.    │
+│                                                                               │
+│ Decoy Addresses (Empty):                                                     │
+│ Ethereum: 0x999999... [Copy]                                                │
+│ Bitcoin:  bc1zzzz... [Copy]                                                 │
+│                                                                               │
+│ ⚠️ Memorize or destroy. Never save this note.                              │
+│ [Memorized] [Delete & Go Back]                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ SETTINGS                                                                      │
+│                                                                               │
+│ 📊 Subscription Status                                                       │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │ Free Tier                          [Unlock Pro ($9.99 one-time)]       │ │
+│ │ • 1 cipher               • Limited features                             │ │
+│ │                                                                          │ │
+│ │ Pro Features:           [Only with Pro]                                │ │
+│ │ ✓ Unlimited ciphers     ✗ Custom themes                               │ │
+│ │ ✓ Panic phrases         ✗ Export encrypted                            │ │
+│ │ ✓ Offline PWA           ✗ Extended backup                             │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                               │
+│ 📦 Data Management                                                           │
+│ [Download Backup (encrypted JSON)] [Delete All Data (⚠️ irreversible)]     │
+│                                                                               │
+│ 🛡️ Security Tips                                                            │
+│ • Never screenshot seed phrases                                              │
+│ • Back up cipher mappings                                                    │
+│ • Encrypt exported JSON before cloud storage                                │
+│ • Test recovery with small wallet first                                      │
+│ • Keep device passcode strong                                               │
+│                                                                               │
+│ ℹ️ About CloakSeed                                                          │
+│ Version: 1.0.0 • License: MIT • Privacy: 100% client-side, zero telemetry  │
+│                                                                               │
+│ ⚖️ Legal Disclaimer                                                         │
+│ CloakSeed provided AS-IS. Users responsible for seed security. No liability.│
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═════════════════════════════════════════════════════════════════════════════════
+
+KEY INTERACTION PATTERNS:
+
+1️⃣  SETUP WORKFLOW (First Time)
+   Landing → Dashboard (empty) → Generator → Show Real Seed + Cloak → 
+   Write Cloak → Import Real Seed to MetaMask → Save Cloak → Dashboard
+
+2️⃣  RECOVERY WORKFLOW (Restore Wallet)
+   Dashboard → Decoder → Select Cipher → Paste Cloak Phrase → 
+   Decode → Show Real Seed → Copy to MetaMask → Done
+
+3️⃣  SECURITY WORKFLOW (Backup)
+   Dashboard → Settings → Download Backup → Encrypt JSON locally → 
+   Store in cloud or cold storage → Keep safe
+
+4️⃣  PANIC WORKFLOW (Coercion Defense)
+   Decoder → Generate Panic Phrase → Memorize or Destroy → 
+   If threatened, give panic cloak (shows empty wallets) → Safety
+
+5️⃣  EXPORT WORKFLOW (New Device)
+   Old Device: Settings → Download Backup → Encrypt
+   New Device: Import backup → Decrypt → Restore ciphers → Done
+
+═════════════════════════════════════════════════════════════════════════════════
+
+FEATURES AT A GLANCE:
+
+✅ 100% Client-Side     (No backend, no servers, no API calls)
+✅ Zero Telemetry       (No analytics, no tracking, no cookies)
+✅ Multi-Theme          (5 built-in + unlimited custom wordlists)
+✅ Multi-Chain          (Ethereum, Bitcoin, Solana in one seed)
+✅ Panic Phrases        (Decoy wallets for coercion scenarios)
+✅ Export Encrypted     (Download cipher as encrypted JSON)
+✅ PWA Ready            (Install on mobile, works offline)
+✅ Freemium             (Free tier or Pro $9.99 one-time)
+✅ Mobile Responsive    (Works on all devices)
+✅ Dark/Light Mode      (Theme toggle)
+✅ Security Focused     (Zeroization, HTTPS only, CSP headers)
+✅ Open Source          (MIT license, full source visible)
+
+═════════════════════════════════════════════════════════════════════════════════
+
+DEPLOYMENT OPTIONS (Choose Any):
+
+🚀 Vercel       → npm install && vercel
+🚀 Netlify      → netlify deploy --prod --dir=dist
+🚀 Cloudflare   → Connect GitHub, auto-deploy
+🚀 AWS S3       → aws s3 sync dist/ s3://bucket/
+🚀 Docker       → docker build -t cloakseed . && docker run
+🚀 Nginx        → Copy dist/ to /var/www/cloakseed/
+🚀 GitHub Pages → Push to main, auto-deploy with action
+🚀 Node.js      → npm run build && npm run preview
+
+═════════════════════════════════════════════════════════════════════════════════
+
+                         🔐 TURN YOUR SEED INTO POETRY
+                      KEEP YOUR CRYPTO IN THE SHADOWS 🔐
+
+═════════════════════════════════════════════════════════════════════════════════
