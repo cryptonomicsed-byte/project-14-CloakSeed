@@ -375,14 +375,14 @@ describe('storage', () => {
 ```
 
 ### Manual Testing Checklist
-- [ ] Generate cloak with each theme
-- [ ] Export and reimport cipher
-- [ ] Decode without cipher (should fail)
-- [ ] Generate panic phrase
-- [ ] Test PWA offline mode
-- [ ] Verify localStorage limit (512+ ciphers)
-- [ ] Test on mobile iOS/Android
-- [ ] Test with slow network (DevTools throttle)
+- [x] Generate cloak with each theme
+- [x] Export and reimport cipher
+- [x] Decode without cipher (should fail)
+- [x] Generate panic phrase
+- [x] Test PWA offline mode
+- [x] Verify localStorage limit (512+ ciphers)
+- [x] Test on mobile iOS/Android
+- [x] Test with slow network (DevTools throttle)
 
 ---
 

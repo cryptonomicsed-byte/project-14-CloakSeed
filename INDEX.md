@@ -304,21 +304,21 @@ All supported with this codebase:
 
 ## 📋 Checklist Before Production
 
-- [ ] Update README.md with live links
-- [ ] Add CNAME for custom domain (if using)
-- [ ] Enable HTTPS (automatic on Vercel/Netlify)
-- [ ] Set up security headers (CSP, X-Frame-Options, etc.)
-- [ ] Test on all browsers (Chrome, Firefox, Safari, Edge)
-- [ ] Test on mobile (iOS, Android)
-- [ ] Verify PWA offline functionality
-- [ ] Test all crypto operations (seed gen, encode, decode)
-- [ ] Verify localStorage persistence
-- [ ] Test Stripe integration (if monetizing)
-- [ ] Add analytics (optional, privacy-respecting)
-- [ ] Set up CDN caching (for assets)
-- [ ] Configure CSP headers
-- [ ] Test performance (Lighthouse)
-- [ ] Add custom favicon & manifest icons
+- [x] Update README.md with live links
+- [x] Add CNAME for custom domain (if using)
+- [x] Enable HTTPS (automatic on Vercel/Netlify)
+- [x] Set up security headers (CSP, X-Frame-Options, etc.)
+- [x] Test on all browsers (Chrome, Firefox, Safari, Edge)
+- [x] Test on mobile (iOS, Android)
+- [x] Verify PWA offline functionality
+- [x] Test all crypto operations (seed gen, encode, decode)
+- [x] Verify localStorage persistence
+- [x] Test Stripe integration (if monetizing)
+- [x] Add analytics (optional, privacy-respecting)
+- [x] Set up CDN caching (for assets)
+- [x] Configure CSP headers
+- [x] Test performance (Lighthouse)
+- [x] Add custom favicon & manifest icons
 
 ---
 
